@@ -19,3 +19,21 @@ pip install -r requirements.txt
 ```bash
 python hello_requests.py
 ```
+
+## Run with Docker
+
+Build the Docker image:
+
+```bash
+docker build -t python-lab .
+```
+
+Run the container:
+
+```bash
+docker run --rm python-lab
+```
+
+The script sends a request to httpbin.org.
+Depending on the remote server status, the result may be HTTP 200, HTTP 503, or a timeout.
+
