@@ -37,3 +37,18 @@ docker run --rm python-lab
 The script sends a request to httpbin.org.
 Depending on the remote server status, the result may be HTTP 200, HTTP 503, or a timeout.
 
+
+## Run with Docker Compose
+
+Build the image:
+
+```bash
+docker compose build
+```
+
+Run the app service:
+
+```bash
+docker compose run --rm app
+```
+
